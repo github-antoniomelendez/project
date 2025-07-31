@@ -1,0 +1,87 @@
+/* Desktop View */
+@media screen and (min-width: 600px) {
+    main {
+        background-image: url('../images/x.webp');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    nav {
+        display: flex !important;
+        flex-direction: row;
+        justify-content: center;
+        background: none;
+        margin-top: 0;
+    }
+    
+    #menu-toggle {
+        display: none;
+    }
+    
+    nav a {
+        padding: 1rem 2rem;
+    }
+    
+
+    .hero-image {
+        display: none;
+    }
+
+    main img.hero-image {
+        display: none;
+    }
+
+    .hero-image img {
+        height: 500px;
+    }
+
+    .data {
+        grid-area: data;
+        position: absolute;
+        bottom: 15rem;
+        left: 2rem;
+        width: 400px;
+        background-color: rgba(255, 255, 255, 0.9);
+        padding: 1rem;
+        border-radius: 10px;
+        box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .weather {
+        grid-area: weather;
+        position: absolute;
+        bottom: 2rem;
+        right: 2rem;
+        width: 300px;
+        background-color: rgba(255, 255, 255, 0.9);
+        padding: 1rem;
+        border-radius: 10px;
+        box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .mobile-only {
+        display: none;
+    }
+
+    .weather h2::after {
+        content: "☀️";
+        display: inline-block;
+        font-size: 3rem;
+        margin-left: 20px;
+        vertical-align: middle;
+    }
+
+    .info-box {
+        box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+        font-size: 1.2rem;
+    }
+
+    .info-box h2 {
+        font-size: 2rem;
+    }
+}

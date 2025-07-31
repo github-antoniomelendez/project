@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>My Personal Website - Antonio Melendez</title>
+    <meta name="description" content="This is a personal website for Antonio Melendez, owned and controlled by me. Focused on expressing myself and sharing important information about me.">
+    <meta name="site purpose" content="This site is a unique space, designed to showcase my work, skills, personality and interests.">
+    <meta name="author" content="Antonio Melendez">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script src="scripts/siteplan.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Antonio Melendez</h1>
+
+        <!-- Hamburger Button -->
+        <button id="menu-toggle" aria-label="Menu">&#9776;</button>
+        
+        <nav id="primary-nav">
+            <a href="#" id="home" class="active">Home</a>
+            <a href="#" id="about">About</a>
+            <a href="#" id="portfolio">Portfolio</a>
+            <a href="#" id="contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <picture class="hero-image">
+            <source srcset="images/x" media="(min-width: 768px)">
+            <img src="images/x" alt="Antonio">
+        </picture>
+
+
+        <section class="info-box data">
+            <h2>Personal Data</h2>
+            <ul>
+                <li><label>Name:</label> <span>Antonio Melendez</span></li>
+                <li><label>Education:</label> <span>Software Engineer</span></li>
+                <li><label>Languages:</label> <span>English, Spanish, German</span></li>
+                <li><label>Phone:</label> <span>123-555-1234</span></li>
+                <li><label>Email:</label> <span>antonio@gmail.com</span></li>
+            </ul>
+        </section>
+
+        <section class="info-box weather">
+            <h2>Weather</h2>
+
+            <!-- Mobile-only icon -->
+            <img src="images/sunny_icon.svg" alt="Weather icon" class="weather-icon mobile-only"/>
+
+            <ul>
+                <li><label>Temperature:</label> <span>25 °C</span></li>
+                <li><label>Conditions:</label> <span>Sunny</span></li>
+                <li><label>Wind:</label> <span>13 km/h</span></li>
+                <li><label>Wind Chill:</label> <span>27 °C</span></li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> 💼 Antonio Melendez 💼 Mexico</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
