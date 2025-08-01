@@ -3,14 +3,16 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>My Personal Website - Antonio Melendez</title>
-    <meta name="description" content="This is a personal website for Antonio Melendez, owned and controlled by me. Focused on expressing myself and sharing important information about me.">
-    <meta name="site purpose" content="This site is a unique space, designed to showcase my work, skills, personality and interests.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Site Plan - Teenage Mutant Ninja Turtles Club</title>
+    <meta name="description" content="A club with information on TMNT.">
+    <meta name="site purpose"
+        content="This site is a unique space, designed to showcase information on TMNT.">
     <meta name="author" content="Antonio Melendez">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/large.css">
     <script src="scripts/siteplan.js" defer></script>
@@ -18,55 +20,63 @@
 
 <body>
     <header>
-        <h1>Antonio Melendez</h1>
-
-        <!-- Hamburger Button -->
-        <button id="menu-toggle" aria-label="Menu">&#9776;</button>
-        
-        <nav id="primary-nav">
-            <a href="#" id="home" class="active">Home</a>
-            <a href="#" id="about">About</a>
-            <a href="#" id="portfolio">Portfolio</a>
-            <a href="#" id="contact">Contact</a>
-        </nav>
+        <h1>TMNT Club</h1>
+        <p><strong>Logo concept:</strong> A turtle shell.</p>
     </header>
+    
+    <section>
+        <h2>Site Name</h2>
+        <p><strong>Name:</strong> TMNT Club</p>
+        <p>This name represents an online fan community dedicated to the Teenage Mutant Ninja Turtles. It’s direct,
+            recognizable, and connects instantly with fans of the franchise, whether from comics, cartoons, or movies.</p>
+        <p><strong>Optional Domain Availability:</strong> <code>tmntclub.com</code></p>
+    </section>
+    
+    <section>
+        <h2>Site Purpose</h2>
+        <p>The TMNT Club website will have information on the TMNT characters.
+            The information will be presented in info cards for fans to see and learn about the TMNT characters.</p>
+    </section>
+    
+    <section>
+        <h2>Scenarios</h2>
+        <ul>
+            <li>How can I join the TMNT club?</li>
+            <li>Who are the TMNT characters?</li>
+            <li>What are the characteristics of these characters?</li>
+        </ul>
+    </section>
+    
+    <section>
+        <h2>Color Schema</h2>
+        <ul>
+            <li><strong>Primary Color:</strong> Forest Green (<code>#116611</code>) – Used for header, footer, and borders.</li>
+            <li><strong>Secondary Color:</strong> Army Green (<code>#1f270b</code>) – Used as the background color.</li>
+            <li><strong>Accent Color:</strong> Mutant Orange (<code>#ff4500</code>) – Used for buttons, links, and highlights.</li>
+            <li><strong>Text Color:</strong> White (<code>#ffffff</code>) – Used for body text.</li>
+        </ul>
+    </section>
+    
+    <section>
+        <h2>Typography</h2>
+        <ul>
+            <li><strong>Bangers</strong> – Used for headings (comic-style font, fits the TMNT theme).</li>
+            <li><strong>Roboto</strong> – Used for body text (clean and readable).</li>
+        </ul>
+    </section>
 
-    <main>
-        <picture class="hero-image">
-            <source srcset="images/x" media="(min-width: 768px)">
-            <img src="images/x" alt="Antonio">
-        </picture>
 
+    <section>
+        <h2>Wireframes</h2>
+        <p><strong>Mobile View:</strong></p>
+        <img src="images/homepage_mobile_view.png" alt="Wireframe for mobile view">
 
-        <section class="info-box data">
-            <h2>Personal Data</h2>
-            <ul>
-                <li><label>Name:</label> <span>Antonio Melendez</span></li>
-                <li><label>Education:</label> <span>Software Engineer</span></li>
-                <li><label>Languages:</label> <span>English, Spanish, German</span></li>
-                <li><label>Phone:</label> <span>123-555-1234</span></li>
-                <li><label>Email:</label> <span>antonio@gmail.com</span></li>
-            </ul>
-        </section>
-
-        <section class="info-box weather">
-            <h2>Weather</h2>
-
-            <!-- Mobile-only icon -->
-            <img src="images/sunny_icon.svg" alt="Weather icon" class="weather-icon mobile-only"/>
-
-            <ul>
-                <li><label>Temperature:</label> <span>25 °C</span></li>
-                <li><label>Conditions:</label> <span>Sunny</span></li>
-                <li><label>Wind:</label> <span>13 km/h</span></li>
-                <li><label>Wind Chill:</label> <span>27 °C</span></li>
-            </ul>
-        </section>
-
-    </main>
+        <p><strong>Desktop View:</strong></p>
+        <img src="images/homepage_desktop_view.png" alt="Wireframe for desktop view">
+    </section>
 
     <footer>
-        <p>&copy; <span id="currentyear"></span> 💼 Antonio Melendez 💼 Mexico</p>
+        <p>&copy; <span id="currentyear"></span> 🥷 Antonio Melendez 🐢 Mexico</p>
         <p id="lastModified"></p>
     </footer>
 </body>
