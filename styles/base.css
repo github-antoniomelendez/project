@@ -65,3 +65,109 @@ footer {
     font-size: 1.5rem;
     border-radius: 10px;
 }
+
+/* Form */
+
+form {
+    background-color: #2d2d2d;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+    max-width: 90%;
+    margin: 2rem auto;
+}
+
+form fieldset {
+    border: 2px solid var(--accent-color);
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+form legend {
+    font-family: 'Bangers', cursive;
+    font-size: 1.5rem;
+    color: var(--accent-color);
+    margin-bottom: 0.5rem;
+}
+
+label {
+    display: block;
+    margin-top: 1rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select, textarea {
+    width: 90%;
+    padding: 1.2rem;
+    margin-top: 0.2rem;
+    border: 2px solid var(--accent-color);
+    border-radius: 6px;
+    background-color: #1f270b;
+    color: white;
+    font-size: 1.2rem;
+}
+
+textarea {
+    resize: vertical;
+    
+}
+
+.rating label {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    cursor: pointer;
+    font-size: 1.5rem;
+    gap: 0.3rem;
+    color: gold;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    margin-right: 0;
+}
+
+select {
+    width: 100%;
+    padding: 1.2rem 1rem;
+    font-size: 1.1rem;
+    border: 2px solid var(--accent-color);
+    border-radius: 6px;
+    background-color: #1f270b;
+    color: white;
+    appearance: none;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='orange' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: 1.5rem;
+    cursor: pointer;
+}
+
+input[type="submit"] {
+    background-color: var(--accent-color);
+    color: white;
+    padding: 1.5rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    margin: 1.5rem auto 0 auto;
+    width: 80%;
+    font-family: 'Bangers', cursive;
+    cursor: pointer;
+    display: block;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+    text-shadow: 2px 2px 5px #2d2d2d;
+}
+
+input[type="submit"]:hover {
+    background-color: #cc3700;
+}

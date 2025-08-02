@@ -1,2 +1,50 @@
 /* Desktop View */
+
+/* Form */
+
+@media (min-width: 768px) {
+    body {
+        padding: 4rem;
+    }
+
+    form {
+        max-width: 800px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+
+    form legend {
+        font-size: 2rem;
+    }
+
+    form h1,
+    form input[type="submit"] {
+        grid-column: 1 / -1;
+    }
+
+    fieldset {
+        grid-column: 1 / -1;
+    }
+
+    textarea {
+        grid-column: 1 / -1;
+    }
+
+    label {
+        margin-top: 0.5rem;
+    }
+
+    label[for="card"], #card {
+        grid-column: 1 / -1;
+        display: block;
+    }
+
+    input[type="submit"] {
+        width: 50%;
+        padding: 2rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
     

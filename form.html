@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Site Plan - Form</title>
+    <meta name="description" content="A form for subscribing to TMNT Club.">
+    <meta name="site purpose" content="Shows a form for subscribing to TMNT Club.">
+    <meta name="author" content="Antonio Melendez">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script src="scripts/siteplan.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>TMNT Club</h1>
+        <p><strong>Logo concept:</strong> A turtle shell.</p>
+    </header>
+
+    <main>
+        <h1>TMNT Club Info Card Review</h1>
+        <form action="thanks.html" method="get">
+            <fieldset>
+                <legend>Review Form</legend>
+                <label>First Name* <input type="text" name="fname" required></label>
+                <label>Last Name* <input type="text" name="lname" required></label>
+                <label>Phone <input type="tel" name="phone" placeholder="1235551234"></label>
+                <label>Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
+            </fieldset>
+
+            <label for="card">Character Name <span class="required">*</span></label>
+            <select id="card" name="card" required>
+                <option value="" disabled selected>Select a Character Card ...</option>
+            </select>
+            
+            <fieldset>
+                <legend>Overall Rating <span class="required">*</span></legend>
+                <div class="rating">
+                    <label for="rating1">★<input type="radio" id="rating1" name="rating" value="1" required></label>
+                    <label for="rating2">★★<input type="radio" id="rating2" name="rating" value="2"></label>
+                    <label for="rating3">★★★<input type="radio" id="rating3" name="rating" value="3"></label>
+                    <label for="rating4">★★★★<input type="radio" id="rating4" name="rating" value="4"></label>
+                    <label for="rating5">★★★★★<input type="radio" id="rating5" name="rating" value="5"></label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Which features did you find useful?<br><em>(Check all that apply)</em></legend>
+                <label><input type="checkbox" id="durability" name="features" value="Durability"> Durability</label>
+                <label><input type="checkbox" id="ease" name="features" value="Ease of Use"> Ease of Use</label>
+                <label><input type="checkbox" id="performance" name="features" value="Performance"> Performance</label>
+                <label><input type="checkbox" id="design" name="features" value="Design"> Design</label>
+            </fieldset>
+            
+            <label for="review">Written Review <span class="optional">(Optional)</span></label>
+            <textarea id="review" name="review" rows="4"></textarea>
+
+            <input type="submit" value="Review The TMNT Info Card">
+
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> 🥷 Antonio Melendez 🐢 Mexico</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
