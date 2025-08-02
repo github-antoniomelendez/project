@@ -5,6 +5,10 @@
         padding: 4rem;
     }
 
+    h2 {
+        font-size: 3rem;
+    }
+
     /* Form */
     form {
         max-width: 800px;
@@ -83,6 +87,41 @@
         background-color: var(--accent-color);
         color: white;
         border-radius: 5px;
+    }
+
+    /* Cards */
+    .res-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+        margin-top: 2rem;
+        padding: 2rem;
+    }
+    
+    .card h3 {
+        text-shadow: 2px 2px 5px #ffffff;
+        letter-spacing: 1px;
+        font-size: 2.5rem;
+    }
+    
+    .card img {
+        width: 100%;
+        max-width: 200px;
+        height: auto;
+        border-radius: 0.5rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    
+    .card p {
+        margin: 0.25rem 0;
+        font-size: 1.5rem;
+    }
+    
+    .card .label {
+        font-weight: bold;
+        color: #ffffff;
+        font-size: 1.8rem;
     }
 
 }
