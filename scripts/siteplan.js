@@ -42,21 +42,17 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("lastModified").textContent = `Last Modification: ${lastMod}`;
   });
 
-// Hamburger Menu
-const toggleButton = document.getElementById('menu-toggle');
-const nav = document.getElementById('primary-nav');
+// Hamburger menu
+document.addEventListener("DOMContentLoaded", () => {
+  const menuToggle = document.getElementById("menu-toggle");
+  const nav = document.getElementById("primary-nav");
 
-toggleButton.addEventListener('click', () => {
-    nav.classList.toggle('show');
-
-    // Toggle between ☰ and ✖ symbols
-    toggleButton.innerHTML = nav.classList.contains('show') ? '✖' : '&#9776;';
+  menuToggle.addEventListener("click", () => {
+    const isOpen = nav.classList.toggle("open");
+    menuToggle.innerHTML = isOpen ? "✖" : "☰";
+    menuToggle.setAttribute("aria-expanded", isOpen);
+    nav.setAttribute("aria-hidden", !isOpen);
+  });
 });
 
-// Make the active page appear yellow on the nav
-function setActive(id) {
-  document.querySelectorAll("nav a").forEach(link => {
-    link.classList.remove("active");
-  });
-  document.getElementById(id).classList.add("active");
-}
+
