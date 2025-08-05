@@ -1,6 +1,32 @@
-/* Desktop View */
-
+/* Tablet View */
 @media (min-width: 768px) {
+    body {
+        padding: 3rem;
+    }
+
+    form {
+        gap: 1.5rem;
+    }
+
+    #menu-toggle {
+        display: block;
+    }
+
+    #primary-nav {
+        display: none;
+    }
+
+    #primary-nav.open {
+        display: flex;
+    }
+
+    .res-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Desktop View */
+@media (min-width: 1151px) {
     body {
         padding: 4rem;
     }
@@ -9,52 +35,10 @@
         font-size: 3rem;
     }
 
-    /* Form */
-    form {
-        max-width: 800px;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 2rem;
-    }
-
-    form legend {
-        font-size: 2rem;
-    }
-
-    form h1,
-    form input[type="submit"] {
-        grid-column: 1 / -1;
-    }
-
-    fieldset {
-        grid-column: 1 / -1;
-    }
-
-    textarea {
-        grid-column: 1 / -1;
-    }
-
-    label {
-        margin-top: 0.5rem;
-    }
-
-    label[for="card"], #card {
-        grid-column: 1 / -1;
-        display: block;
-    }
-
-    input[type="submit"] {
-        width: 50%;
-        padding: 2rem;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    /* Nav Bar */
     #menu-toggle {
         display: none;
     }
-    
+
     header {
         justify-content: space-between;
     }
@@ -74,7 +58,7 @@
         visibility: visible;
         margin-top: 0;
     }
-    
+
     #primary-nav a {
         font-size: 2.5rem;
         border: none;
@@ -82,28 +66,56 @@
         border-radius: 5px;
         transition: background-color 0.3s;
     }
-    
+
     #primary-nav a:hover {
         background-color: var(--accent-color);
         color: white;
         border-radius: 5px;
     }
 
-    /* Cards */
-    .res-grid {
+    form {
+        max-width: 800px;
         display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+
+    form legend {
+        font-size: 2rem;
+    }
+
+    form h1,
+    form input[type="submit"] {
+        grid-column: 1 / -1;
+    }
+
+    fieldset,
+    textarea,
+    label[for="card"],
+    #card {
+        grid-column: 1 / -1;
+    }
+
+    input[type="submit"] {
+        width: 50%;
+        padding: 2rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .res-grid {
         grid-template-columns: repeat(3, 1fr);
         gap: 2rem;
         margin-top: 2rem;
         padding: 2rem;
     }
-    
+
     .card h3 {
         text-shadow: 2px 2px 5px #ffffff;
         letter-spacing: 1px;
         font-size: 2.5rem;
     }
-    
+
     .card img {
         width: 100%;
         max-width: 200px;
@@ -112,17 +124,15 @@
         margin-top: 1rem;
         margin-bottom: 1rem;
     }
-    
+
     .card p {
         margin: 0.25rem 0;
         font-size: 1.5rem;
     }
-    
+
     .card .label {
         font-weight: bold;
         color: #ffffff;
         font-size: 1.8rem;
     }
-
 }
-    

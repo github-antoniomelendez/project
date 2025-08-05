@@ -24,7 +24,7 @@
     
         <div class="logo-heading">
             <a href="siteplan.html">
-                <img src="images/tmnt_logo.webp" alt="TMNT Club Logo" class="logo" width="100" height="auto" loading="lazy">
+                <img src="images/tmnt_logo.webp" alt="TMNT Club Logo" class="logo" width="100" height="100" loading="lazy">
             </a>
             <h1>TMNT Club</h1>
         </div>
@@ -37,19 +37,19 @@
     </header>
 
     <main>
-        <h2>TMNT Club Info Card Review</h2>
+        <h2>Info Card Review</h2>
         <form action="thanks.html" method="get">
             <fieldset>
                 <legend>Review Form</legend>
-                <label>First Name* <input type="text" name="fname" required></label>
-                <label>Last Name* <input type="text" name="lname" required></label>
-                <label>Phone <input type="tel" name="phone" placeholder="1235551234"></label>
-                <label>Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
+                <label>First Name * <input type="text" name="fname" required></label>
+                <label>Last Name * <input type="text" name="lname" required></label>
+                <label>Phone Number<input type="tel" name="phone" placeholder="1235551234"></label>
+                <label>E-mail * <input type="email" name="email" placeholder="someone@gmail.com" required></label>
             </fieldset>
 
             <label for="card">Character Name <span class="required">*</span></label>
             <select id="card" name="card" required>
-                <option value="" disabled selected>Select a Character Card ...</option>
+                <option value="" disabled selected>Select Character Card ...</option>
             </select>
             
             <fieldset>
@@ -71,10 +71,10 @@
                 <label><input type="checkbox" id="design" name="features" value="Design"> Image Design</label>
             </fieldset>
             
-            <label for="review">Written Review <span class="optional">(Optional)</span></label>
-            <textarea id="review" name="review" rows="4"></textarea>
+            <label for="wreview">Written Review <span class="optional">(Optional)</span></label>
+            <textarea id="wreview" name="wreview" rows="4"></textarea>
 
-            <input type="submit" value="Review The TMNT Info Card">
+            <input type="submit" value="Send Review">
 
         </form>
     </main>

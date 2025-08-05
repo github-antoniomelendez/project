@@ -1,6 +1,6 @@
 /* Mobile View */
 :root {
-    --primary-color: #116611; /* Forest Green - for TMNT energy */
+    --primary-color: #0b2f0b; /* Forest Green - for TMNT energy */
     --secondary-color: #1f270b; /* Army Green - for backgrounds */
     --accent-color: #ff4500; /* Mutant Orange for buttons or icons */
     --text-color: white;
@@ -282,7 +282,7 @@ input[type="text"],
 input[type="email"],
 input[type="tel"],
 select, textarea {
-    width: 90%;
+    width: 85%;
     padding: 1.2rem;
     margin-top: 0.2rem;
     border: 2px solid var(--accent-color);
@@ -300,7 +300,6 @@ textarea {
 .rating label {
     display: flex;
     flex-direction: column;
-    align-items: left;
     cursor: pointer;
     font-size: 1.5rem;
     gap: 0.3rem;
@@ -362,7 +361,7 @@ input[type="submit"]:hover {
 }
 
 .card {
-    background-color: #1f270b;
+    background-color: var(--primary-color);
     border-radius: 1rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
     padding: 1.5rem;
